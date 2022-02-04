@@ -21,25 +21,25 @@
 /* -- Navbar -- */
 
 #navbar-container {
+    font-family: var(--font-body);
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
-    margin: 1rem;
+    align-items: center;
+    padding: 1.5rem;
 }
 
 #navbar-container>div>img {
     width: 100px;
-    height: auto;
 }
 
 .button-try {
     font: var(--font-body);
-    color: var(--Light-Pink);
+    color: var(--Pink);
     background-color: transparent;
     font-size: .5rem ;
-    border: 1px solid var(--Light-Pink);
+    border: 1px solid var(--Pink);
     border-radius: 2rem;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.5rem;
 }
 
 /* -- Section -- */
@@ -229,25 +229,24 @@
 }
 
 @media only screen and (min-width: 376px) {
- /* -- Navbar -- */
-    #navbar-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: stretch;
-        padding: 3rem;
-    }
-    
-    .button-try {
-        font: var(--font-body);
-        color: var(--Light-Pink);
-        font-size: 1.5rem ;
-        border: solid var(--Light-Pink);
-        border-radius: 2rem;
-        padding: 0.5rem 2rem;
-    }
+    /* -- Navbar -- */
 
-    #navbar-container>div>img {
-        width: 100%;
-        height: auto;
-    }
+        #navbar-container{
+            padding: 2.5rem;
+        }
+
+       #navbar-container>div>img {
+           width: 80%;
+       }
+       
+       .button-try {
+           font-size: 14px;
+       }
+   
+       .button-try:hover {
+           cursor: pointer;
+           color: var(--Light-Pink);
+           border: 2px solid var(--Light-Pink);
+       }
+   
 }
