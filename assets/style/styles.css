@@ -8,6 +8,9 @@
     /* -- Fonts --*/
     --font-headings: 'Poppins', sans-serif;
     --font-body: 'Open Sans', sans-serif;
+    --desktop-font-size-headings: 40px;
+    --desktop-font-size-body: 18px;
+
     /* -- Colors primary --*/
     --Pink: hsl(322, 100%, 66%);
     --Light-Pink: hsl(321, 100%, 78%);
@@ -15,6 +18,7 @@
     /* -- Colors neutral --*/
     --Very-Dark-Cyan: hsl(192, 100%, 9%);
     --Very-Pale-Blue: hsl(207, 100%, 98%);
+
 }
 
 
@@ -58,32 +62,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
 }
 
 .container> img{
     width: 250px;
-    margin-bottom: 2rem;
-}
-
-.container>h1{
-    font-family: var(--font-headings);
-    color: var(--Very-Dark-Cyan);
-    margin-bottom: 1.25rem;
-}
-
-.container>h2{
-    font-family: var(--font-headings);
-    font-size: 16px;
-    color: var(--Very-Dark-Cyan);
-    margin-bottom: 1rem;
-}
-
-.container>p{
-    font-family: var(--font-body);
-    font-size: 12px;
-    color: var(--Very-Dark-Cyan);
-    margin-bottom: 2rem;
 }
 
 .container> .button{
@@ -97,12 +79,46 @@
     margin-bottom: 5rem;
 }
 
-#section-info{
+.container> h1{
+    font-family: var(--font-headings);
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 1.25rem;
+}
+
+.p-container {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 2rem;
+}
+
+.section-info>h1{
+    font-family: var(--font-headings);
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 1.25rem;
+}
+
+.section-info>h2{
+    font-family: var(--font-headings);
+    font-size: 16px;
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 1rem;
+}
+
+.section-info>p{
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 2rem;
+}
+
+
+#section-about{
     display: flex;
     flex-direction: column;
 }
 
-#section-info> .page-info{
+#section-about> .page-info{
     font-family: var(--font-body);
     color: var(--Very-Dark-Cyan);
 }
@@ -241,12 +257,92 @@
        
        .button-try {
            font-size: 14px;
+           transition: all .3s;
        }
    
        .button-try:hover {
-           cursor: pointer;
-           color: var(--Light-Pink);
-           border: 2px solid var(--Light-Pink);
-       }
+            cursor: pointer;
+            color: var(--Light-Pink);
+            border: 1px solid var(--Light-Pink);
+       } 
+
+    /* -- Section --*/
+        .container{
+            margin-bottom: 10rem;
+        }
+
+        .container> h1{
+            font-size: var(--desktop-font-size-headings);
+        }
+        
+        .p-container {
+            margin: 0 20rem 3rem 20rem;
+            font-size: var(--desktop-font-size-body);
+        }
+
+        .container> .button{
+            font-size: var(--desktop-font-size-body);
+            font-weight: 200;
+            margin-top: 2rem;
+            padding: 1.5rem 4rem;
+            transition: all .3s;
+        }
+
+        .container> .button:hover{
+            box-shadow: -1px 5px 12px -2px rgba(0,0,0,0.46);
+            -webkit-box-shadow: -1px 5px 12px -2px rgba(0,0,0,0.46);
+            -moz-box-shadow: -1px 5px 12px -2px rgba(0,0,0,0.46);
+            background-color: var(--Light-Pink);
+            cursor: pointer;
+        }
+               
+        .container> .screen-mockups{
+            width: 100%;
+        }
+
+        .container> img{
+            width: 45%;
+        }
+
+        .section-info{
+            padding: 5rem;
+            text-align: left;
+        }
+        
+        .section-info>h2{
+            font-size: var(--desktop-font-size-headings);
+        }
+        
+        .section-info>p{
+            font-size: var(--desktop-font-size-body);
+        }
+
+        .bkg-direction-right{
+            flex-direction: row-reverse;
+        }
+
+        .direction-left{
+            flex-direction: row;
+        }
+
+        #section-about{
+            flex-direction: row;
+        }
+
+        .page-info> img{
+            width: 35px;
+        }
+
+        .page-info> h1{
+            font-size: 65px;
+        }
+
+        .page-info> p{
+            font-size: 15px;
+        }
+
+        .margin-right{
+            margin-right: 25rem;
+        }
    
 }
