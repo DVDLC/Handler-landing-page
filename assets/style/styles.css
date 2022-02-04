@@ -20,24 +20,26 @@
 
 /* -- Navbar -- */
 
-#navbar-container{
+#navbar-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+    align-items: stretch;
+    margin: 1rem;
 }
 
-#navbar-container> img {
-    width: 110px;
+#navbar-container>div>img {
+    width: 100px;
+    height: auto;
 }
 
-#navbar-container > button{
-    padding: .25rem 1.1rem;
-    border-radius: 30px;
-    color: var(--Pink);
-    font-family: var(--font-body);
+.button-try {
+    font: var(--font-body);
+    color: var(--Light-Pink);
     background-color: transparent;
-    border: 1.5px solid var(--Pink);
+    font-size: .5rem ;
+    border: 1px solid var(--Light-Pink);
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
 }
 
 /* -- Section -- */
@@ -226,3 +228,26 @@
     color: var(--Pink);
 }
 
+@media only screen and (min-width: 376px) {
+ /* -- Navbar -- */
+    #navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 3rem;
+    }
+    
+    .button-try {
+        font: var(--font-body);
+        color: var(--Light-Pink);
+        font-size: 1.5rem ;
+        border: solid var(--Light-Pink);
+        border-radius: 2rem;
+        padding: 0.5rem 2rem;
+    }
+
+    #navbar-container>div>img {
+        width: 100%;
+        height: auto;
+    }
+}
