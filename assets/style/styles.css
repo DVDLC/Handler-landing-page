@@ -20,9 +20,67 @@
 }
 
 /* -- Navbar -- */
+#navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 1rem;
+}
 
+.button-try {
+    font: var(--font-body);
+    color: var(--Light-Pink);
+    font-size: .5rem ;
+    border: 1px solid var(--Light-Pink);
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
+}
+
+#navbar-container>div>img {
+    width: 100px;
+    height: auto;
+}
+
+.button-try {
+    font: var(--font-body);
+    color: var(--Light-Pink);
+    font-size: .5rem ;
+    border: 1px solid var(--Light-Pink);
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
+}
 
 /* -- Section -- */
+section>h1{
+    text-align: center;
+    font: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 40px 90px;
+}
+.button-get{
+    color: var(--Very-Pale-Blue);
+    background-color: var(--Pink);
+    font-size: 20px ;
+    border: 1px solid var(--Light-Pink);
+    border-radius: 2rem;
+    text-align: center;
+    margin:30px 250px;
+    padding: 30px;
+}
+section>h1~p{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 20px;
+    margin:10px 180px;
+    
+}
+.image-section{
+    display: block;
+    margin: auto;
+    width: 70%;
+    margin-top: 15%;
+}
 
 
 /* -- Footer -- */
@@ -31,10 +89,58 @@
 @media only screen and (min-width: 768px) {
     
     /* -- Navbar -- */
+    #navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 3rem;
+    }
 
 
+    .button-try {
+        font: var(--Very-Pale-Blue);
+        color: var(--Pink);
+        font-size: .5rem ;
+        border: 1px solid var(--Light-Pink);
+        border-radius: 2rem;
+        padding: 0.5rem 2rem;
+    }
+
+    #navbar-container>div>img {
+        width: 100%;
+        height: auto;
+    }
     /* -- Section -- */
-
+    section>h1{
+        text-align: center;
+        font: var(--font-headings);
+        font-weight: 700;
+        font-size: 50px;
+        padding: 20px 80px;
+    }
+    .button-get{
+        color: var(--Very-Pale-Blue);
+        background-color: var(--Pink);
+        font-size: 20px ;
+        border: 1px solid var(--Light-Pink);
+        border-radius: 2rem;
+        text-align: center;
+        margin:5% 30%;
+        padding: 13px;
+    }
+    section>h1~p{
+        text-align: center;
+        padding-bottom: 30px;
+        font-size: 20px;
+        margin:5% 180px;
+        
+    }
+    .image-section{
+        display: block;
+        margin: auto;
+        width: 70%;
+        margin-top: 15%;
+    }
 
     /* -- Footer -- */
     
