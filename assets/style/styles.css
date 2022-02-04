@@ -1,23 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     /* -- Fonts --*/
-        --font-headings: 'Poppins', sans-serif;
-        --font-body: 'Open Sans', sans-serif;
-
+    --font-headings: 'Poppins', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
     /* -- Colors primary --*/
-        --Pink: hsl(322, 100%, 66%);
-        --Light-Pink: hsl(321, 100%, 78%);
-        --Light-Red: hsl(0, 100%, 63%);
-
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
     /* -- Colors neutral --*/
-        --Very-Dark-Cyan: hsl(192, 100%, 9%);
-        --Very-Pale-Blue: hsl(207, 100%, 98%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
 }
+
 
 /* -- Navbar -- */
 #navbar-container{
@@ -42,18 +41,79 @@
 
 /* -- Section -- */
 
+//footer
+#footer-container {
+    background-image: url("../images/bg-section-bottom-mobile-1.svg");
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
 
 /* -- Footer -- */
 
+.footer-phone {
+    margin: auto;
+    width: 27px;
+    margin-top: 40px;
+    margin-right: 7px;
+}
+
+.input1 {
+    text-decoration: none;
+    width: 80%;
+    margin: 15px 40px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px 8px;
+}
+
+.input2 {
+    text-decoration: none;
+    display: block;
+    float: right;
+    margin-right: 45px;
+    margin-bottom: 70px;
+    width: 27%;
+    padding: 10px;
+    background-color: #fd53c0;
+    border-radius: 10px 10px;
+    color: white;
+    font-size: 15px;
+    border: none;
+}
+
+.footer-mail {
+    margin: auto;
+    width: 27px;
+    margin-top: 10px;
+    margin-right: 7px;
+}
+
+.facebook {
+    margin-top: 55px;
+    width: 27px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.instagram {
+    margin-top: 55px;
+    width: 27px;
+    margin-left: 10px;
+}
+
+.twitter {
+    margin-top: 55px;
+    width: 27px;
+    margin-left: 10px;
+}
+
+
+/* -- Footer -- */
 
 @media only screen and (min-width: 768px) {
-    
     /* -- Navbar -- */
-
-
     /* -- Section -- */
-
-
     /* -- Footer -- */
-    
 }
